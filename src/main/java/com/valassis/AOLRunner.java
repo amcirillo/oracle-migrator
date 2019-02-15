@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 /**
  * Created by aaron on 2/15/19.
  */
-@Component
 public class AOLRunner extends AbstractRunner {
 
     private static Logger log = LoggerFactory.getLogger(AOLRunner.class);
