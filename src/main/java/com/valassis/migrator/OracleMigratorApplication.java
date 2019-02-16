@@ -12,6 +12,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -43,8 +44,8 @@ public class OracleMigratorApplication implements CommandLineRunner{
     @Override
     public void run(String... args) throws Exception {
         log.info("Spring is executing the Oracle Migration Runner");
-        for (int i = 0; i < args.length; ++i) {
-            log.info("args[{}]: {}", i, args[i]);
+        if (args.length == 0 || args[0] == null) {
+            throw new RuntimeException("No yaml configuration provided");
         }
         File yamlFile = new File(args[0]);
         ObjectMapper om = new ObjectMapper(new YAMLFactory());
