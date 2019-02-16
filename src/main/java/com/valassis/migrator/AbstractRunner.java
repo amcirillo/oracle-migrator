@@ -1,4 +1,4 @@
-package com.valassis;
+package com.valassis.migrator;
 
 /**
  * Created by aaron on 2/15/19.

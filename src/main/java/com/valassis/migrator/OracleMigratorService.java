@@ -1,4 +1,4 @@
-package com.valassis;
+package com.valassis.migrator;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

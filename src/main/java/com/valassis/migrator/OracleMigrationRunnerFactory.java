@@ -1,4 +1,4 @@
-package com.valassis;
+package com.valassis.migrator;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
