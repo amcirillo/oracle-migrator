@@ -1,3 +1,4 @@
+# In a yaml file you can include comments
 artifacts:
 - name: "Name 0"
   type: "AOL"
@@ -8,6 +9,9 @@ artifacts:
     value: "value 1"
   - key: "key 2"
     value: "value 2"
+
+# Teams may want to add comments to
+# certain sections of the file
 - name: "Name 1"
   type: "CTL"
   params:
@@ -17,6 +21,8 @@ artifacts:
     value: "value 1"
   - key: "key 2"
     value: "value 2"
+
+# This is another section
 - name: "Name 2"
   type: "SQL"
   params:
@@ -26,6 +32,8 @@ artifacts:
     value: "value 1"
   - key: "key 2"
     value: "value 2"
+
+# This section is for an AOL deployment
 - name: "Name 3"
   type: "AOL"
   params:
@@ -35,6 +43,8 @@ artifacts:
     value: "value 1"
   - key: "key 2"
     value: "value 2"
+
+# This is the last artifact in the file
 - name: "Name 4"
   type: "CTL"
   params:
